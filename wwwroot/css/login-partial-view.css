@@ -1,0 +1,39 @@
+﻿.login-form {
+    color: var(--reg);
+    width: 400px;
+    margin: 30px auto 40px;
+    max-width: 96%;
+    flex-direction: column;
+    display: flex;
+}
+
+.login-form input {
+    background: #FFF !important;
+    border: none !important;
+    border-bottom: 2px solid #E9E9F0 !important;
+}
+
+.login-form .border-btn {
+    border: 1px solid var(--primary) !important;
+    width: 183px;
+    height: 50px;
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 50px;
+    text-align: center;
+}
+
+.login-form button {
+    background: var(--primary) !important;
+    width: 183px;
+    height: 50px;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 300;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+}

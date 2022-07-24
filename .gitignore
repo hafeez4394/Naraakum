@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/bin/Debug/net5.0
+/obj
+/bin/Release/net5.0
+/Properties/PublishProfiles
+/.config
+/Properties/PublishProfiles/FolderProfile.pubxml

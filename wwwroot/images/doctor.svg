@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120.455" height="114.487" viewBox="0 0 120.455 114.487">
+  <defs>
+    <filter id="national-cancer-institute-L8tWZT4CcVQ-unsplash_2_" x="0" y="0" width="120.455" height="114.487" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#f0f4fc"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_40365" data-name="Group 40365" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#national-cancer-institute-L8tWZT4CcVQ-unsplash_2_)">
+      <g id="national-cancer-institute-L8tWZT4CcVQ-unsplash_2_2" data-name="national-cancer-institute-L8tWZT4CcVQ-unsplash (2)" transform="translate(9 6)" fill="#90d0d1" stroke="#23a2a4" stroke-width="2">
+        <rect width="102.455" height="96.487" rx="12" stroke="none"/>
+        <rect x="1" y="1" width="100.455" height="94.487" rx="11" fill="none"/>
+      </g>
+    </g>
+    <g id="Doctor" transform="translate(16.258 11.693)">
+      <path id="Path_78352" data-name="Path 78352" d="M61.821,23.627A10.291,10.291,0,0,0,51.638,15H18.3A10.291,10.291,0,0,0,8.118,23.627l-4.083,24.5a2.579,2.579,0,0,0,2.545,3H63.359a2.579,2.579,0,0,0,2.545-3ZM9.628,45.97l3.581-21.5A5.147,5.147,0,0,1,18.3,20.162h3.764V25.69a10.312,10.312,0,0,0-7.742,9.957,2.581,2.581,0,0,0,5.162,0,5.162,5.162,0,1,1,10.323,0,2.581,2.581,0,1,0,5.162,0,10.312,10.312,0,0,0-7.742-9.957V20.162H45.293v12.9a2.581,2.581,0,1,0,5.162,0v-12.9h1.183a5.147,5.147,0,0,1,5.092,4.312l3.581,21.5Z" transform="translate(0 18.97)" fill="#fff"/>
+      <path id="Path_78353" data-name="Path 78353" d="M18.742,31.389H29.066a7.751,7.751,0,0,0,7.742-7.742v-12.9A7.751,7.751,0,0,0,29.066,3H18.742A7.751,7.751,0,0,0,11,10.742v12.9a7.751,7.751,0,0,0,7.742,7.742ZM16.162,10.742a2.583,2.583,0,0,1,2.581-2.581H29.066a2.583,2.583,0,0,1,2.581,2.581v12.9a2.583,2.583,0,0,1-2.581,2.581H18.742a2.583,2.583,0,0,1-2.581-2.581Z" transform="translate(11.066 0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'SFProText-Light';
+  src: url('SFProText-Light.eot');
+  src: url('SFProText-Light.eot?#iefix') format('embedded-opentype'),
+       url('SFProText-Light.svg#SFProText-Light') format('svg'),
+       url('SFProText-Light.ttf') format('truetype'),
+       url('SFProText-Light.woff') format('woff'),
+       url('SFProText-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

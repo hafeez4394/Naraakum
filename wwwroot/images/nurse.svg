@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120.455" height="114.487" viewBox="0 0 120.455 114.487">
+  <defs>
+    <filter id="ashkan-forouzani-l-NIPb-9Njg-unsplash" x="0" y="0" width="120.455" height="114.487" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#f0f4fc"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_40366" data-name="Group 40366" transform="translate(9 6)">
+    <g id="Group_111" data-name="Group 111" transform="translate(0 0)">
+      <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#ashkan-forouzani-l-NIPb-9Njg-unsplash)">
+        <g id="ashkan-forouzani-l-NIPb-9Njg-unsplash-2" data-name="ashkan-forouzani-l-NIPb-9Njg-unsplash" transform="translate(9 6)" fill="#90d0d1" stroke="#23a2a4" stroke-width="2">
+          <rect width="102.455" height="96.487" rx="12" stroke="none"/>
+          <rect x="1" y="1" width="100.455" height="94.487" rx="11" fill="none"/>
+        </g>
+      </g>
+    </g>
+    <g id="Suster" transform="translate(19.585 10.57)">
+      <path id="Path_78354" data-name="Path 78354" d="M55.609,23.7A9.185,9.185,0,0,0,46.521,16H16.765a9.185,9.185,0,0,0-9.089,7.7L4.032,45.568A2.3,2.3,0,0,0,6.3,48.25H56.981a2.3,2.3,0,0,0,2.272-2.682ZM9.023,43.642l3.2-19.186a4.594,4.594,0,0,1,4.545-3.849h3.36v4.934a9.2,9.2,0,0,0-6.911,8.887,2.3,2.3,0,0,0,4.607,0,4.607,4.607,0,1,1,9.214,0,2.3,2.3,0,0,0,4.607,0,9.2,9.2,0,0,0-6.911-8.887V20.607H40.857V32.125a2.3,2.3,0,0,0,4.607,0V20.607h1.057a4.593,4.593,0,0,1,4.544,3.849l3.2,19.186Z" transform="translate(0 18.249)" fill="#fff"/>
+      <path id="Path_78355" data-name="Path 78355" d="M9.3,31.946H46.16a2.3,2.3,0,0,0,1.629-3.932l-.567-.558a15.4,15.4,0,0,1-5.669-11.635,13.821,13.821,0,0,0-27.642,0A15.477,15.477,0,0,1,8.219,27.477l-.545.538A2.3,2.3,0,0,0,9.3,31.946Zm9.214-16.125a9.214,9.214,0,0,1,18.428,0A18.349,18.349,0,0,0,40.88,27.339H14.575A18.369,18.369,0,0,0,18.518,15.821Z" transform="translate(3.911)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

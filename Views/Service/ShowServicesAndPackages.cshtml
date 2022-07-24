@@ -1,0 +1,257 @@
+﻿
+@{
+    ViewData["Title"] = "Services And Packages";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/Service/ServiceandPakagescss.css" rel="stylesheet" />
+
+<div id="ServicesAndPackagesTemplate_Services" style="display:none;">
+    <div class="col-md-12 serviceinfo">
+        <img src="../images/therapy.svg" alt="" class="posimg">
+        <div class="col-md-auto col-12">
+            <input type="checkbox" name="" id="_ServicesAndPackagesId" onchange="NK.ShowServicesAndPackages.onServicesAndPackagesSelection(this, _type)">
+            <img src="../images/therapy.svg" alt="">
+        </div>
+        <div class="col px-3">
+            <div class="mb-4">
+                <h4>_headerTitle</h4>
+            </div>
+            <div>
+                <h6>_include</h6>
+                <p>_exclude</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="ServicesAndPackagesTemplate_Packages" style="display:none;">
+
+    <div class="col-lg-6 col-md-12">
+        <div class="analyticscontent">
+            <div class="d-flex justify-content-between">
+                <div class="col-auto">
+                    <img src="../images/martha-dominguez-de-gouveia-4.png" alt=""
+                         class="analyticimg">
+                </div>
+                <!-- end col-auto -->
+                <div class="col pt-3 px-4">
+                    <div class="d-flex justify-content-between">
+                        <div class="pkgname">
+                            <h6>_headerTitle</h6>
+                        </div>
+                        <div class="mt-2">
+
+                        <input type="checkbox" name="" id="_ServicesAndPackagesId" onchange="NK.ShowServicesAndPackages.onServicesAndPackagesSelection(this, _type)">
+                        </div>
+                    </div>
+                    <div>
+                        <h2>13 <small>تحليل</small></h2>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <button class="btn bg-light" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                            اختر الباقة
+                        </button>
+                        <button class="btn bg-light" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                            التفاصيل
+                        </button>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end d-flex -->
+        </div>
+        <!-- end analyticscontent -->
+    </div>
+
+</div>
+<ul id="ServicesAndPackagesCartTemplate" style="display:none;">
+    <li class="list-group-item px-0">
+        <div class="d-flex p-0 align-items-center">
+            <img src="~/images/cartdelbtn.svg" class="deleteServicesAndPackagesFromCart cartdelbtn"  data-type="_type" id="_ServicesAndPackagesId">
+            <h6>_headerTitle</h6>
+        </div>
+
+        <div class="col-auto dv_singleCart">
+            <i class="fa fa-plus increaseCartQuantity"></i>
+            <span class="mx-2 enfont fw-bold cartQuantity" id="_ServicesAndPackagesId">_cartValue</span>
+            <i class="fa fa-minus decreaseCartQuantity"></i>
+        </div>
+    </li>
+</ul>
+@section Scripts{
+    <script src=@Url.Content("~/js/Shared/Tools/_GoogleMap.js")></script>
+    <script src=@Url.Content("~/js/Service/ShowServicesAndPackages.js")></script>
+}
+
+<div class="breadcrumbs">
+    <div class="container-fluid border-top border-bottom py-3">
+        <h4 class="d-inline-flex pr-4 mr-4">الرعاية الصحية المنزلية</h4>
+        <a href="#" class="d-inline-flex"><img src="~/images/home.png" alt="" /></a>
+        <span class="breadcrumbs-separator d-inline-flex mx-3"><img src="~/images/chevrons-right.png" alt="" /></span>
+        <span>خدمات التمريض</span>
+    </div>
+    <!--end of container-fluid-->
+</div>
+<!--end of breadcrumbs-->
+<div class="content mt-5 d-flex" id="content">
+    <div class="container-fluid">
+        <div class="mb-5 row bahas">
+            <div class="col-auto mb-2">
+                <h6 class="text-dark">ما الذى تبحث عنه</h6>
+                <p class="mb-0">مثال : التخصص المطلوب أو الخدمة المطلوبة</p>
+            </div>
+            <div class="col-auto text-center">
+                <a href="">بحث</a>
+            </div>
+        </div>
+        <!-- end of bahas row -->
+        <div class="row tamriz justify-content-between">
+            <div class="col-md-6 col-12">
+                <h3 class="mb-4">التحاليل الطبية المنزلية</h3>
+                <p>
+                    حيث يعمل في فني سحب الدم أو أخصائي المختبر على سحب عينة المريض وهو في منزله ويقوم الطبيب بعد ذلك
+                    باعطائه النتائج
+                </p>
+            </div>
+            <div class="col-md-6 col-12 text-center">
+                <img src="../images/news-three.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <!-- end Row tamriz-->
+        <div class="row mb-5 flex-wrap loginservices">
+            <div class="col-lg-9 col-12 mb-3">
+                <ul class="nav nav-pills p-0" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">
+                            باقات التحاليل
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">
+                            التحاليل الفردية
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                         aria-labelledby="pills-home-tab">
+                        <div class="col-md-12 col-12">
+                            <div class="row m-0 justify-content-between analytics text-light Listofpackages">
+                                @*// Packages *@
+                                <!-- end of col-6 no1 -->
+                                <!--<div class="col-md-12 serviceinfo not text-light" data-bs-toggle="modal"
+                         data-bs-target="#exampleModal">
+                        <img src="../images/nurse.svg" alt="" class="posimg">
+                        <div class="col-md-auto col-12">
+                            <img src="../images/nurse.svg" alt="">
+                        </div>
+                        <div class="col px-3">
+                            <h4>لا أعلم الخدمة بالتحديد</h4>
+                            <p>
+                                من خلال ضغطك على هذه الايقونة تستطيع أن تقوم بحجز موعد استشارة طبيب حتى يوجهك
+                                الطبيب
+                                للخدمة التي تحتاجها
+                            </p>
+                        </div>-->
+                                <!-- Modal 2 -->
+                                <!--<div class="modal fade" id="exampleModal" tabindex="-1"
+                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark">يمكننا توجهيك مباشرة إلى</h5>
+                                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body p-0">
+                                    <div class="row flex-wrap align-items-center my-5 justify-content-center">
+                                        <div class="col-md-5 p-2 py-4">
+                                            <div class="row m-0 align-items-center">
+                                                <div class="col-auto">
+                                                    <img src="../images/nurse.svg" alt="">
+                                                </div>
+                                                <div class="col px-3">
+                                                    <h6>زيارة طبية منزلية</h6>
+                                                    <p class="mb-0">
+                                                        إذ تقوم بحجز موعد استشارة طبيب حتى يوجهك
+                                                        الطبيب
+                                                        للخدمة التي تحتاجها
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-auto"></div>
+                                        <div class="col-md-5 p-2 py-4">
+                                            <div class="row m-0 align-items-center flex-wrap">
+                                                <div class="col-auto">
+                                                    <img src="../images/nurse.svg" alt="">
+                                                </div>
+                                                <div class="col px-3">
+                                                    <h6>استشارة طبية عن بعد</h6>
+                                                    <p class="mb-0">
+                                                        إذ تقوم بحجز موعد استشارة طبيب حتى يوجهك
+                                                        الطبيب عن بعد للخدمة التي تحتاجها
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                                <!-- Modal 2 -->
+                                <!--</div>-->
+                            </div>
+                            <!-- end row -->
+                        </div>
+                        <!-- end col-md-9 -->
+                    </div>
+                    <!-- end tab pane1 -->
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="col-md-12 col-12">
+                            <div class="row m-0 Listofcategories">
+                                @*Services*@
+                                <!-- end col-12 -->
+
+                            </div>
+                            <!-- end row -->
+                        </div>
+                        <!-- end col-md-9 -->
+                    </div>
+                    <!-- end tab pane2 -->
+                </div>
+                <!-- end tab content -->
+            </div>
+            <!-- end tab head -->
+            <div class="col-lg-3 col-12 mt-5">
+                <div class="row border rounded my-4 mx-0 Cartbody cart" style="display:none;">
+                    <ul class="list-group list-group-flush" id="dv_cart">
+                    </ul>
+                    <a class="btncart" data-bs-toggle="modal" data-bs-target="#GoogleMapModal">
+                        <span class="d-block">تابع عملية الحجز</span>
+                    </a>
+                    @*<ul class="list-group list-group-flush">
+            <a class="list-group-item" data-bs-toggle="modal" data-bs-target="#GoogleMapModal">
+                <span class="d-block">تابع عملية الحجز</span>
+            </a>
+        </ul>*@
+                </div>
+                <!-- modal -->
+                <!-- modal -->
+            </div>
+            <!-- end of col-3 -->
+        </div>
+        <!-- end of loginservices -->
+    </div>
+    <!--end of container-fluid-->
+</div>
+<!--end of content-->
+
+
+@Html.Partial("~/Views/Shared/Tools/_GoogleMap.cshtml")

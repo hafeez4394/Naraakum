@@ -1,0 +1,188 @@
+﻿
+@{
+    ViewData["Title"] = "Service Providers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/index-ar-login-15.css" rel="stylesheet" />
+<link href="~/css/login-partial-view.css" rel="stylesheet" />
+
+<div>
+
+    <div id="dv_cart" style="display:none">
+
+    </div>
+
+</div>
+
+<div id="ServiceProvidersTemplate" style="display:none;">
+
+    @*<label>
+            <img _hospitalimage alt="" style="width:120px;" />
+            <h3>_headerTitle</h3>
+            <p>_description</p>
+        </label>*@
+
+    <div class="d-flex justify-content-between align-items-center flex-wrap service-provider" style="cursor:pointer">
+        <div class="col-lg-auto col-12">
+            <img _hospitalimage alt="" class="bahasdocimg">
+        </div>
+        <div class="col px-5">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                <div class="mb-2">
+                    <h5>_headerTitle</h5>
+                    <span>التخصص: طب باطنى ورعاية حرجه</span>
+                </div>
+                <div>
+                    <span>اللغة : عربي إنجليزي</span> <br>
+                    <span>الخبرة : 12 سنوات</span>
+                </div>
+                <div>
+                    <span>مدة الأستشارة</span> <br>
+                    <span> 15 دقيقة</span>
+                </div>
+            </div>
+            <div class="my-4">
+                <p>
+                    _description
+                </p>
+            </div>
+            <div class="bahasbtns mb-2">
+                <a href="#" class="text-dark ms-2 arrow-right">
+                    <i class="fa fa-arrow-right"></i>
+                </a>
+                <button>08:00 ص</button>
+                <button>08:00 ص</button>
+                <button>08:00 ص</button>
+                <button class="active">08:00 ص</button>
+                <button>08:00 ص</button>
+                <button>08:00 ص</button>
+                <a href="#" class="text-light">
+                    <i class="fa fa-arrow-left"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-auto col-12">
+            <div class="d-flex flex-column align-content-between flex-wrap">
+                <div class="mb-5">
+                    <h2 class="mb-0 font-weight-bold">162.025</h2>
+                    <span>ريال سعودي</span>
+                </div>
+                <div>
+                    <span>مركز الدكتور <br> بسام الطبي</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div id="ProviderCartTemplate" style="display:none;">
+    <div class="dv_singleCart">
+        <Label>_headerTitle : </Label>
+        <label id="_ServiceId" class="cartQuantity"> _cartValue </label>@*(Quantity)*@
+    </div>
+
+</div>
+
+<div class="breadcrumbs">
+    <div class="container-fluid border-top border-bottom py-3">
+        <h4 class="d-inline-flex pr-4 mr-4">الاقسام</h4>
+        <a href="#" class="d-inline-flex"><img src="~/images/home.png" alt="" /></a>
+        <span class="breadcrumbs-separator d-inline-flex mx-3"><img src="~/images/chevrons-right.png" alt="" /></span>
+        <span>استشارة طبية</span>
+    </div>
+    <!--end of container-fluid-->
+</div>
+<!--end of breadcrumbs-->
+<div class="content mt-5 d-flex" id="content">
+    <div class="container-fluid">
+        <div class="mb-5 row bahas">
+            <div class="col-auto mb-2">
+                <h6 class="text-dark">ما الذى تبحث عنه</h6>
+                <p class="mb-0">مثال : التخصص المطلوب أو الخدمة المطلوبة</p>
+            </div>
+            <div class="col-auto text-center">
+                <a href="">بحث</a>
+            </div>
+        </div>
+        <!-- end of bahas row -->
+        <div class="row mb-5 flex-wrap">
+            <div class="col-lg-3 col-12">
+                <h4 class="mb-5">تصنيف البحث</h4>
+                <div>
+                    <h6>السعر</h6>
+                    <ul class="list-unstyled p-0">
+                        <li>
+                            <input type="radio" name="" id=""> جميع الاسعار
+                        </li>
+                        <li>
+                            <input type="radio" name="" id=""> الأعلى إلى الإقل
+                        </li>
+                        <li>
+                            <input type="radio" name="" id=""> الأقل إلى الأعلى
+                        </li>
+                    </ul>
+                </div>
+                <h6 class="my-4">فرز الأطباء حسب الساعة المحددة</h6>
+                <h6 class="mb-4">من الساعة</h6>
+                <div class="search">
+                    <button class="timebtn">00 : 00</button>
+                    <button class="mrnbtn">صباحاً</button>
+                    <button class="evebtn">مساءً</button>
+                </div>
+                <h6 class="my-4">حتى الساعة</h6>
+                <div class="search">
+                    <button class="timebtn">00 : 00</button>
+                    <button class="mrnbtn">صباحاً</button>
+                    <button class="evebtn">مساءً</button>
+                </div>
+                <div class="my-3">
+                    <button class="tehdeesbtn">تحديث</button>
+                </div>
+            </div>
+            <!-- end of col-3 -->
+            <div class="col-lg-9 col-12 bahasresult border-left">
+                <div class="row">
+                    <div class="col-md-12 my-3">
+                        <h4 class="mb-4">نتائج البحث</h4>
+                        <div class="serchboxbhas">
+                            <select class="form-select bg-transparent border-0" aria-label="Default select example">
+                                <option selected>ترتيب على حسب الجنس / ذكور</option>
+                                <option value="1">One</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- col-md-12 -->
+                    <div class="col-md-12 my-3 ListOfServiceProviders">
+
+                    </div>
+                    <!-- col-md-12 -->
+                </div>
+            </div>
+            <!-- end of col-md-9 -->
+        </div>
+        <!-- end of loginservices -->
+    </div>
+    <!--end of container-fluid-->
+</div>
+<!--end of content-->
+
+<div class="modal fade text-dark show" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="login-form">
+                    <span style="color: #B1B6C0; font-size:15px;">
+                        مرحبا بعودتك! يرجى تسجيل الدخول إلى حسابك
+                    </span>
+                    @Html.Partial("~/Views/PartialViews/_Login.cshtml")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src=@Url.Content("~/js/Service/ShowServiceProviders.js")></script>
+    <script src=@Url.Content("~/js/User/UserLogin.js")></script>
+    <script src=@Url.Content("~/culture/User/LoginCulture.js")></script>
+}

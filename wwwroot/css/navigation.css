@@ -1,0 +1,372 @@
+@font-face {
+	font-family: 'SFProText';
+	src: url('../fonts/SFProText-Light.eot');
+	src: url('../fonts/SFProText-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProText-Light.svg#SFProText-Light') format('svg'), url('../fonts/SFProText-Light.ttf') format('truetype'), url('../fonts/SFProText-Light.woff') format('woff'), url('../fonts/SFProText-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProText';
+	src: url('../fonts/SFProText-Regular.eot');
+	src: url('../fonts/SFProText-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProText-Regular.svg#SFProText-Regular') format('svg'), url('../fonts/SFProText-Regular.ttf') format('truetype'), url('../fonts/SFProText-Regular.woff') format('woff'), url('../fonts/SFProText-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProText';
+	src: url('../fonts/SFProText-Medium.eot');
+	src: url('../fonts/SFProText-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProText-Medium.svg#SFProText-Medium') format('svg'), url('../fonts/SFProText-Medium.ttf') format('truetype'), url('../fonts/SFProText-Medium.woff') format('woff'), url('../fonts/SFProText-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProText';
+	src: url('../fonts/SFProText-Semibold.eot');
+	src: url('../fonts/SFProText-Semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProText-Semibold.svg#SFProText-Semibold') format('svg'), url('../fonts/SFProText-Semibold.ttf') format('truetype'), url('../fonts/SFProText-Semibold.woff') format('woff'), url('../fonts/SFProText-Semibold.woff2') format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProText';
+	src: url('../fonts/SFProText-Bold.eot');
+	src: url('../fonts/SFProText-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProText-Bold.svg#SFProText-Bold') format('svg'), url('../fonts/SFProText-Bold.ttf') format('truetype'), url('../fonts/SFProText-Bold.woff') format('woff'), url('../fonts/SFProText-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProText';
+	src: url('../fonts/SFProText-Heavy.eot');
+	src: url('../fonts/SFProText-Heavy.eot?#iefix') format('embedded-opentype'), url('../fonts/SFProText-Heavy.svg#SFProText-Heavy') format('svg'), url('../fonts/SFProText-Heavy.ttf') format('truetype'), url('../fonts/SFProText-Heavy.woff') format('woff'), url('../fonts/SFProText-Heavy.woff2') format('woff2');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DroidArabicKufi';
+	src: url('../fonts/DroidArabicKufi.ttf') format('truetype'),
+		url('../fonts/DroidArabicKufi.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DroidArabicKufi';
+	src: url('../fonts/DroidArabicKufi-Bold.svg#DroidArabicKufi-Bold') format('svg'), url('../fonts/DroidArabicKufi-Bold.ttf') format('truetype'), url('../fonts/DroidArabicKufi-Bold.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+:root {
+	--primary: #23A2A4;
+	--reg: #646D82;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'SFProText' !important;
+	font-size: 13px !important;
+	color: #333;
+}
+
+body.rtl {
+	direction: rtl;
+	font-family: 'DroidArabicKufi' !important;
+	text-align: right;
+	font-size: 13px !important;
+}
+
+/* ========== Primary Color ============ */
+
+.c-primary {
+	color: var(--primary) !important;
+}
+
+/* ========== Primary Color ============ */
+
+/* ========== English font family ============ */
+
+.enfont {
+	font-family: 'SFProText';
+}
+
+/* ========== end English font family ============ */
+
+
+/* =========== header ============ */
+
+header .container-fluid,
+footer .container-fluid {
+	max-width: 1640px;
+	position: relative
+}
+
+header img {
+	width: 98px;
+}
+
+body.rtl nav a {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(35,162,164, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+	border-color: rgb(35, 162, 164);
+}
+
+body.rtl ul.navbar-nav.ml-auto {
+	margin-left: 0 !important;
+	margin-right: auto;
+}
+
+header .nav-link.btn {
+	background: var(--primary);
+	border-radius: 10px;
+	color: #FFF;
+    margin-right: 55px;
+    margin-left: 20px;
+}
+
+header .nav-link.btn:hover {
+	color: #fff !important;
+}
+
+header .nav-item.c-o a {
+	color: var(--primary);
+	padding: 0.5rem 15px;
+	border-left: 1px solid #E6E6E7
+}
+
+header .nav-link img {
+	width: 20px;
+	display: inline-block;
+}
+
+.c-o .userinfo {
+	color: #0C0C0C;
+	line-height: 14px;
+}
+
+.c-o .userinfo img {
+	width: 34px;
+}
+
+.c-o .userinfo p {
+	font-size: 12px;
+}
+
+.c-o .userinfo small {
+	font-size: 9px;
+}
+
+.c-o .dropdown-toggle{
+	padding: .3rem 15px !important;
+}
+.c-o .dropdown-toggle::after {
+	position: absolute;
+	left: 5px;
+	top: 15px;
+}
+
+
+
+/* ======== DropDown Menu ========= */
+
+.c-o .dropdown a{
+	padding: .1rem 15px !important;
+}
+
+.c-o .dropdown-menu {
+	min-width: 15rem;
+	text-align: right;
+	top: 100%;
+	right: 0;
+	margin-top: 1.125rem;
+	border-radius: 10px;
+	padding: 0;
+}
+
+.c-o .dropdown-menu .dropdown-item {
+	padding: 0 15px !important;
+	border: none;
+}
+
+.c-o .dropdown-menu .dropdown-item a {
+	text-decoration: none;
+	border: none;
+	padding: 1rem 15px !important;
+}
+
+.c-o .dropdown-menu .dropdown-item a:hover {
+	color: #fff !important;
+	border-color: var(--primary) !important;
+}
+
+.c-o .dropdown-menu .arithmetic a::before {
+	background: url(../images/h-user-icon.png) no-repeat;
+}
+
+.c-o .dropdown-menu .arithmetic a:hover:before {
+	background: url(../images/h-user-icon-active.png) no-repeat;
+	background-size: 100%;
+}
+
+.c-o .dropdown-menu .request a::before {
+	background: url(../images/h-cart-icon.png) no-repeat;
+}
+
+.c-o .dropdown-menu .request a:hover:before {
+	background: url(../images/h-cart-icon-active.png) no-repeat;
+	background-size: 100%;
+}
+
+.c-o .dropdown-menu .favorite a::before {
+	background: url(../images/h-star-icon.png) no-repeat;
+}
+
+.c-o .dropdown-menu .favorite a:hover:before {
+	background: url(../images/h-star-icon-active.png) no-repeat;
+	background-size: 100%;
+}
+
+.c-o .dropdown-menu .message a::before {
+	background: url(../images/h-message-icon.png) no-repeat;
+}
+
+.c-o .dropdown-menu .message a:hover:before {
+	background: url(../images/h-message-icon-active.png) no-repeat;
+	background-size: 100%;
+}
+
+.c-o .dropdown-menu .beneficiarie a::before {
+	background: url(../images/h-users-icon.png) no-repeat;
+}
+
+.c-o .dropdown-menu .beneficiarie a:hover:before {
+	background: url(../images/h-users-icon-active.png) no-repeat;
+	background-size: 100%;
+}
+
+.c-o .dropdown-menu .portfolio a::before {
+	background: url(../images/h-wallet-icon.png) no-repeat;
+}
+
+.c-o .dropdown-menu .portfolio a:hover:before {
+	background: url(../images/h-wallet-icon-active.png) no-repeat;
+	background-size: 100%;
+}
+
+.c-o .dropdown-menu .logout a::before {
+	background: url(../images/h-exit-icon.png) no-repeat;
+}
+
+.c-o .dropdown-menu .logout a:hover:before {
+	background: url(../images/h-exit-icon-active.png) no-repeat;
+	background-size: 100%;
+}
+
+.c-o .dropdown-menu .dropdown-item a::before {
+	content: "";
+	width: 20px;
+	height: 21px;
+	margin-left: 10px;
+	background-size: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.c-o .dropdown-menu span {
+	display: inline-block;
+	margin-left: 0.255em;
+	vertical-align: 0.255em;
+	content: "";
+	border-right: .5em solid transparent;
+	border-bottom: .75rem solid transparent;
+	border-left: .5em solid transparent;
+	border-bottom-color: var(--primary);
+	position: absolute;
+	right: 15px;
+	top: -12px;
+}
+
+.c-o .dropdown-menu .arithmetic:hover {
+	border-radius: 10px 10px 0 0;
+}
+
+.c-o .dropdown-menu .logout:hover {
+	border-radius: 0 0 10px 10px;
+}
+
+.c-o .dropdown-menu .dropdown-item:hover {
+	background-color: var(--primary);
+	color: #fff !important;
+}
+
+/* ======== End DropDown Menu ========= */
+
+body.rtl nav .nav-item:last-child a {
+	font-size: 17px;
+	font-family: 'SFProText' !important;
+}
+
+.dropdown-toggle::after {
+	border-top-color: var(--primary)
+}
+
+
+nav a {
+	color: #303030 !important;
+	padding: 0.5rem 20px !important;
+	font-size: 15px;
+}
+
+nav .active a,
+nav a:hover {
+	color: var(--primary) !important;
+}
+
+@media screen and (max-width:1400px) {
+
+	nav.nav-lg a {
+		padding: 0.5rem 15px !important;
+	}
+}
+
+@media screen and (max-width:1300px) {
+
+	header .nav-lg .nav-item.c-o a,
+	nav.nav-lg a {
+		padding: 0.5rem 10px !important
+	}
+
+	header .nav-lg .nav-link.btn {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+@media screen and (max-width:1150px) {
+	nav a {
+		padding: 0.5rem 18px !important
+	}
+
+	header .nav-lg .nav-item.c-o a,
+	nav.nav-lg a {
+		padding: 0.5rem 7px !important;
+		font-size: 12px;
+	}
+}
+
+
+/* ========  end header  ============ */

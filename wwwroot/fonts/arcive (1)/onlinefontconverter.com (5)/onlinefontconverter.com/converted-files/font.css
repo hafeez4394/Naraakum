@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'SFProText-Medium';
+  src: url('SFProText-Medium.eot');
+  src: url('SFProText-Medium.eot?#iefix') format('embedded-opentype'),
+       url('SFProText-Medium.svg#SFProText-Medium') format('svg'),
+       url('SFProText-Medium.ttf') format('truetype'),
+       url('SFProText-Medium.woff') format('woff'),
+       url('SFProText-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

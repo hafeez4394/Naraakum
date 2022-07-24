@@ -1,0 +1,75 @@
+﻿var NK = NK || {};
+NK.PatientRegistrationCulture = NK.PatientRegistrationCulture || {};
+NK.PatientRegistrationCulture.en = {
+    fullNameTitle: 'Full Name',
+    userNameTitle: 'User Name',
+    phoneNumber: 'Phone Number',
+    emailTitle: 'Email',
+    passwordTitle: 'Password',
+    rePasswordTitle: 'Retype Password',
+    termsandCondationTitle: 'I Agree With Terms & Conditions',
+    btnRegisterTitle: 'Sign up',
+    alreadyAccountTitle: 'Already Have an Account ?',
+    btnAlreadyLoginTitle: 'Login',
+    formHeadingTitle: 'Please Register Your Info',
+    imageHeadingTitle: '( Upload Photo )',
+    nationalityTitle:'Select Country',
+
+    msgCountry: "Please select country",
+    msgFullName: "please enter full name ",
+    msgUserName1: "please enter user name",
+    msgUserName2: "White Space not allowed and you can use Dot(.), underscore(_), dash/hyphen (-) !",
+    msgPhoneNumber: "please enter phone number ",
+    msgEmail: "please enter email",
+    msgEmail2: "Please enter valid email address ",
+    msgPassword: "Please enter password",
+    msgPassword2: "Password does not match ",
+    msgTermsAndCondation: "Please indicate that you accept the Terms and Conditions",
+    msgDob: "Please enter date of birth",
+
+    ////API Message Code
+    msgCode3001: "User already register",
+    msgCode3002: "Email already register",
+    msgCode200: "Data has been saved successfully.",
+    msgCode5001: "Email Sent Successfully",
+    msgCode400: "Bad Request",
+    msgCode3003: "UniqueSocialId Already Exist",
+}
+NK.PatientRegistrationCulture.ar = {
+    fullNameTitle: 'الاسم الكامل',
+    userNameTitle: 'اسم االمستخدم',
+    phoneNumber: 'رقم الهاتف',
+    emailTitle: 'بريد الالكتروني',
+    passwordTitle: 'كلمه السر',
+    rePasswordTitle: 'أعد إدخال كلمة السر',
+    termsandCondationTitle: 'أوافق على الشروط والأحكام',
+    btnRegisterTitle: 'اشتراك',
+    alreadyAccountTitle: 'هل لديك حساب ؟',
+    btnAlreadyLoginTitle: 'تسجيل الدخول',
+    formHeadingTitle: 'الرجاء تسجيل المعلومات الخاصة بك',
+    imageHeadingTitle: '( حمل الصورة )',
+    nationalityTitle: 'حدد الدولة',
+
+
+     ///Error message
+    msgTermsAndCondation: "يرجى الإشارة إلى قبولك للشروط والأحكام",
+    msgCountry: "الرجاء تحديد الدولة",
+    msgFullName: "الرجاء إدخال الاسم الكامل ",
+    msgUserName1: "الرجاء إدخال اسم المستخدم",
+    msgUserName2: "غير مسموح بالمسافة البيضاء ويمكنك استخدام النقطة (.) ، الشرطة السفلية (_) ، الشرطة / الواصلة (-)",
+    msgPhoneNumber: "الرجاء إدخال رقم الهاتف ",
+    msgEmail: "الرجاء إدخال البريد الإلكتروني",
+    msgEmail2: "الرجاء إدخال عنوان بريد إلكتروني صالح",
+    msgPassword: "الرجاء إدخال كلمة المرور",
+    msgPassword2: "كلمة السر غير متطابقة ",
+    msgTermsAndCondation: "يرجى الإشارة إلى قبولك للشروط والأحكام",
+    msgDob: "الرجاء إدخال تاريخ الميلاد",
+
+    ////API Message Code
+    msgCode3001: "المستخدم سجل بالفعل",
+    msgCode3002: "البريد الإلكتروني مسجل بالفعل",
+    msgCode200: "تم حفظ البيانات بنجاح.",
+    msgCode5001: "تم إرسال البريد الإلكتروني بنجاح",
+    msgCode400: "اقتراح غير جيد",
+    msgCode3003: "UniqueSocialId موجود بالفعل",
+}
